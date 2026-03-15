@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', 'arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+input,
+button,
+a {
+    font-family: 'Montserrat', 'arial', sans-serif;
+}
+
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+header .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-text {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.menu-item:hover {
+    opacity: 0.8;
+}
+
+.header-divider {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero {
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 735px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero .center {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.hero-btn {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hero-btn:hover {
+    opacity: 0.8;
+}
+
+.catalog-section {
+    padding: 80 0;
+    background-color: #ffffff;
+    flex: 1;
+}
+
+.catalog-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 40px;
+    margin-top: 75px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    flex: 0 0 calc(33.333% - 20px);
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    margin: 20px 0 10px;
+}
+
+.card-desc {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.4;
+    margin: 0 0 15px;
+}
+
+.card-price {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 20px;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .card {
+        flex: 0 0 calc(50% - 15px);
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .catalog-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex: 0 0 100%;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .catalog-title {
+        font-size: 32px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .logo-text {
+        font-size: 28px;
+    }}
