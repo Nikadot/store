@@ -43,6 +43,8 @@ header .center {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-left: 0; 
+    padding-right: 0; 
 }
 
 .logo-text {
@@ -79,7 +81,7 @@ header .center {
 }
 
 .hero {
-    background-image: url('./images/фон\ в\ шапке.jpg');
+    background-image: url('./img/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,6 +152,7 @@ header .center {
     font-size: 48px;
     font-weight: 600;
     color: #000000;
+    margin-top: 50px; 
     margin-bottom: 40px;
 }
 
